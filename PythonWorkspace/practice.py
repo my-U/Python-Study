@@ -1,11 +1,10 @@
-print(abs(-5))     # -5에 대한 절댓값 = 5
-print(pow(4, 2))   # 4의 2제곱 = 16
-print(max(5, 12))  # 5와 12 중에 더 높은 값 = 12
-print(min(5, 12))  # 5와 12 중에 더 낮은 값 = 5
-print(round(3.14)) # 3.14의 반올림 값 = 3
-print(round(4.99)) # 4.99의 반올림 값 = 5
+from random import *  # random 라이브러리에 들어있는 모든 것을 사용
 
-from math import * # math 라이브러리의 모든 것을 사용한다
-print(floor(4.99)) # 4.99의 내림 값 = 4
-print(ceil(3.14))  # 3.14의 올림 값 = 4
-print(sqrt(16))    # 16의 제곱근 값 = 4
+print(random())  # 0.0에서 1.0 미만의 임의의 값을 생성
+print(random() * 10) # 0.0에서 10.0 미만의 임의의 값을 생성
+print(int(random() * 10)) # 0에서 10 미만의 임의의 정수값 생성
+print(int(random() * 10) + 1) # 1에서 11미만의 임의의 정수값 생성
+
+print(int(random() * 45) + 1) # 1에서 46 미만의 임의의 정수값 생성
+print(randrange(1, 46)) # 1에서 46 미만의 임의의 값 생성
+print(randint(1, 45)) # 1에서 45 이하의 임의의 값 생성
