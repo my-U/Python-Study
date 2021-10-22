@@ -1,9 +1,11 @@
-animal = "강아지"
-name = "고치"
-age = 4
-hobby = "산책"
-is_adult = age >= 3 # age가 3 이상이면 true
+print(abs(-5))     # -5에 대한 절댓값 = 5
+print(pow(4, 2))   # 4의 2제곱 = 16
+print(max(5, 12))  # 5와 12 중에 더 높은 값 = 12
+print(min(5, 12))  # 5와 12 중에 더 낮은 값 = 5
+print(round(3.14)) # 3.14의 반올림 값 = 3
+print(round(4.99)) # 4.99의 반올림 값 = 5
 
-print("우리집 " + animal + "의 이름은 " + name + "예요.")
-print(name + "는 " + str(age) + "살이며, " + hobby + "를 아주 좋아해요") # str() : 정수형이나 불린형 등을 문자형으로 변경해줌
-print(name + "는 어른일까요? " + str(is_adult))
+from math import * # math 라이브러리의 모든 것을 사용한다
+print(floor(4.99)) # 4.99의 내림 값 = 4
+print(ceil(3.14))  # 3.14의 올림 값 = 4
+print(sqrt(16))    # 16의 제곱근 값 = 4
