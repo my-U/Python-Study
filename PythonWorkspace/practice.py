@@ -1,9 +1,10 @@
-sentence = "나는 소녀입니다"
-print(sentence)
-sentence2 = "파이썬은 쉬워요"
-print(sentence2)
-sentence3 = """
-나는 소녀이고,
-파이썬은 쉬워요
-""" # 여러줄 출력 가능
-print(sentence3)
+jumin = "990120-1234567"
+
+print("성별 : " + jumin[7]) # 인덱스 7번째 값
+print("년도 : " + jumin[0:2]) # 인덱스 0부터 2직전까지
+print("월 : " + jumin[2:4]) # 인덱스 2부터 4직전까지
+print("일 : " + jumin[4:6]) # 인덱스 4부터 6직전까지
+
+print("생년월일 : " + jumin[:6]) # 인덱스 처음부터 6직전까지
+print("뒷번호 7자리 : " + jumin[7:]) # 인덱스 7부터 끝까지
+print("뒷번호 7자리(뒤에서부터) : " + jumin[-7:]) # 가장 끝번호는 인덱스 0의 앞이기 때문에 인덱스 -1이다
