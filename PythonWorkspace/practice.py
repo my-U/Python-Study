@@ -1,18 +1,20 @@
-python = "Python is Amazing"
+# 서식 지정자
+print("나는 %d살입니다." %20) # d는 정수만 가능
+print("나는 %s을 좋아해요." %"파이썬") # s는 문자열만 가능
+print("Apple은 %c로 시작해요." %"A") # c는 문자 1개
 
-print(python.lower()); # 모든 문자 소문자로 출력
-print(python.upper()); # 모든 문자 대문자로 출력
-print(python[0].isupper()); # 인덱스 0번째 문자가 대문자인지
-print(len(python)) # python 문자열의 길이
-print(python.replace("Python", "Java")); # 문자열 중 Python을 Java로 변경
+print("나는 %s살입니다." %20) # s는 숫자 또한 사용 가능
+print("나는 %s색과 %s색을 좋아해요." %("파란", "빨간")) # 여러 개의 값을 표현할 땐 괄호 사용
 
-index = python.index("n") # 문자 n의 인덱스 번호 출력
-print(index) # index = 5
-index = python.index("n", index + 1) # 위의 index의 값 + 1 부터 즉, 인덱스 6부터 문자 n을 찾음
-print(index) # index = 15
+# str.format
+print("나는 {}살입니다." .format(20))
+print("나는 {}색과 {}색을 좋아해요.".format("파란", "빨간"))
+print("나는 {1}색과 {0}색을 좋아해요.".format("파란", "빨간")) # 포맷의 인덱스 번호
 
-print(python.find("n")) # 문자 n의 인덱스 번호 출력
-print(python.find("Java")) # 문자열에 Java가 존재하지 않아 -1 출력 후 다음 코드 실행
-print(python.index("Java")) # 문자열에 Java가 존재하지 않아 오류 출력 후 실행 중단
+print("나는 {age}살이며, {color}색을 좋아해요.".format(age = 20, color = "빨간")) # 인덱스보다 명확한 사용을 위해 
+print("나는 {age}살이며, {color}색을 좋아해요.".format(color = "빨간", age = 20))
 
-print(python.count("n")) # 문자 n이 문자열에서 몇 번 존재하는지 세줌
+# f-string(3.6v 이상부터 지원)
+age = 20
+color = "빨간"
+print(f"나는 {age}살이며, {color}색을 좋아해요.")
